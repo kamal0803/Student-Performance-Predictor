@@ -1,4 +1,4 @@
-# Student-Performance-Predictor
+# Student Performance Predictor
 
 Implemented a research paper on predicting secondary school students' performance using regression and classification models of Machine Learning.
 
@@ -38,3 +38,16 @@ For each student, below are the features -
 - `Walc` - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
 - `health` - current health status (numeric: from 1 - very bad to 5 - very good)
 - `absences` - number of school absences (numeric: from 0 to 93)
+- `G1` - first period grade (numeric: from 0 to 20)
+- `G2` - second period grade (numeric: from 0 to 20)
+- `G3` - final grade (numeric: from 0 to 20, output target)
+
+## Approach
+Various demographic, social and school-related variables were correlated with past failures in terms of visuals, which helped to drill down to the factors contributing to maximum failures. To build a model to predict scores (using regression) and to classify if a student passed (using classification), various pre-processing steps were done using OrdinalEncoder & OneHotEncoder. Both both regression & classification, **Random Forest**, **SVM** & **Decision Trees** were used.
+
+Out of 395 data points, 315 were considered for training & remaining 80 for testing.
+
+For Set A, prediction was done using all input variables. For Set B, G1 was ignored and finally for Set C, both G1 & G2 were not considered as a part of model training.
+
+## Results & Conclusion
+My models validated the findings of the research paper - the model's maximum accuracy is when we have both G1, G2 in training data and predicting G3 becomes increasingly difficult as we keep dropping period grades. 
