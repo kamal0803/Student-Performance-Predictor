@@ -51,3 +51,11 @@ For Set A, prediction was done using all input variables. For Set B, G1 was igno
 
 ## Results & Conclusion
 My models validated the findings of the research paper - the model's maximum accuracy is when we have both G1, G2 in training data and predicting G3 becomes increasingly difficult as we keep dropping period grades. 
+
+## Acknowledgements
+
+https://archive.ics.uci.edu/dataset/320/student+performance
+
+Using data mining to predict secondary school student performance (http://repositorium.sdum.uminho.pt/bitstream/1822/8024/1/student.pdf)
+By P. Cortez, A. M. G. Silva. 2008
+Published in Proceedings of 5th Annual Future Business Technology Conference
