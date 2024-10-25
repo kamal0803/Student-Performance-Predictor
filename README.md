@@ -43,7 +43,7 @@ For each student, below are the features -
 - `G3` - final grade (numeric: from 0 to 20, output target)
 
 ## Approach
-Various demographic, social and school-related variables were correlated with past failures in terms of visuals, which helped to drill down to the factors contributing to maximum failures. To build a model to predict scores (using regression) and to classify if a student passed (using classification), various pre-processing steps were done using OrdinalEncoder & OneHotEncoder. Both both regression & classification, **Random Forest**, **SVM** & **Decision Trees** were used.
+Various demographic, social and school-related variables were correlated with past failures in terms of visuals, which helped to drill down to the factors contributing to maximum failures. To build a model to predict scores (using regression) and to classify if a student passed (using classification), various pre-processing steps were done using OrdinalEncoder & OneHotEncoder. For both regression & classification, **Random Forest**, **SVM** & **Decision Trees** were used.
 
 Out of 395 data points, 315 were considered for training & remaining 80 for testing.
 
